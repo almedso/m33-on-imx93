@@ -28,9 +28,7 @@ set(MCUX_BUILD_TYPES debug release)
 
 set(MCUX_SDK_PROJECT_NAME rpmsg_lite_str_echo_rtos_imxcm33.elf)
 
-if (NOT DEFINED SdkRootDirPath)
-    SET(SdkRootDirPath ${ProjDirPath}/../../../../..)
-endif()
+message ( STATUS "sdk root: ${SdkRootDirPath}")
 
 include(${ProjDirPath}/flags.cmake)
 
